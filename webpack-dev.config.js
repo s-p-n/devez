@@ -1,9 +1,12 @@
 const path = require("path");
 const webpack = require("webpack");
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
 	mode: "development",
-	entry: ["babel-polyfill", "./src/index.js"],
+	entry: ["babel-polyfill", 
+		"./src/index.js", 
+		"./src/scss/index.scss"
+	],
 	devtool: "inline-source-map",
 	module: {
 		rules: [
@@ -19,6 +22,10 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [ "style-loader", "css-loader" ]
+			},
+			{
+				test: /\.scss$/,
+				use: ["style-loader", "css-loader", "sass-loader"]
 			},
 			{
 				test: /\.(png|jpg|jpeg|gif|svg|pdf)$/,
@@ -43,6 +50,9 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.NamedModulesPlugin(),
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		new MiniCssExtractPlugin({
+			filename: '[name].css'
+		})
 	]
 };

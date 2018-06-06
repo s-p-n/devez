@@ -1,9 +1,10 @@
 const path = require("path");
 const bundlePath = path.resolve(__dirname, "dist/");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
 	mode: "production",
-	entry: ["babel-polyfill", "./src/index.js"],
+	entry: ["babel-polyfill", "./src/index.js", "./src/scss/index.scss"],
 	module: {
 		rules: [
 			{
@@ -18,6 +19,10 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: ["style-loader", "css-loader"]
+			},
+			{
+				test: /\.scss$/,
+				use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
 			},
 			{
 				test: /\.(png|jpg|jpeg|gif|svg|pdf)$/,
@@ -36,5 +41,9 @@ module.exports = {
 		publicPath: bundlePath,
 		filename: "bundle.js"
 	},
-	plugins: []
+	plugins: [
+		new MiniCssExtractPlugin({
+			filename: "[name].css",
+		})
+	]
 };
