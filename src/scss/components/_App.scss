@@ -1,56 +1,37 @@
-/*
-	dark: #34675C;
-	light: #B7B8B6;
-	primary: #4CB5F5;
-	secondary: #B3C100;
-
-*/
-
-.primary {
-	background: $primary;
-	color: $primaryFont;
-}
-
-.secondary {
-	background: $secondary;
-	color: $secondaryFont;
-}
-
 .App {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: row;
 	margin: 0;
 	font-family: Arial, Helvatica, sans-serif;
-}
 
-.App>.left {
-	background: $navBG;
-	color: $navFont;
-	flex: 1;
-}
+	>.left {
+		background: $navBG;
+		color: $navFont;
+		flex: 1;
+	}
 
-.App>.right {
-	display: flex;
-	flex-direction: column;
-	flex: 5;
-	background: #FFF;
-	color: black;
-}
+	>.right {
+		display: flex;
+		flex-direction: column;
+		flex: 5;
+		background: #FFF;
+		color: black;
 
-.App>.right>.Top {
-	background: $light;
-	color: white;
-	height: 70px;
-}
+		>.Top {
+			background: $light;
+			color: white;
+			height: 70px;
+		}
 
-.App>.right>.Content {
-	display:flex;
-	flex-direction: row;
-}
+		>.TopSeperator {
+			height: 5px;
+			box-shadow: 0px 0px 1px 1px #0000006b;
+		}
 
-
-.TopSeperator {
-	height: 5px;
-	box-shadow: 0px 0px 1px 1px #0000006b;
+		>.Content {
+			display:flex;
+			flex-direction: row;
+		}
+	}
 }

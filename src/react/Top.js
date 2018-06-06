@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import "../css/Top.css";
 
 class Top extends React.Component {
 	render () {
