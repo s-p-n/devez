@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import { hot } from "react-hot-loader";
-import Nav from "./Nav.js";
-import Top from "./Top.js";
-import Content from "./Content.js";
+import Nav from "./base/Nav.js";
+import Top from "./base/Top.js";
+import Content from "./base/Content.js";
+
+let db = {
+	pageFile: "Home"
+}
 
 class App extends Component {
 	render() {
@@ -13,11 +17,10 @@ class App extends Component {
 				</div>
 				<div className="right">
 					<Top />
-					<div className="TopSeperator primary"></div>
-					<Content />
+					<div className="TopSeperator secondary"></div>
+					<Content pageFile={db.pageFile}/>
 				</div>
 			</div>
-
 		);
 	}
 }
