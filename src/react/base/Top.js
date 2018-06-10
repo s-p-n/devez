@@ -5,7 +5,7 @@ class Top extends React.Component {
 		return (
 			<div className="Top">
 				<div className="Logo">
-					sasm
+					devez
 				</div>
 			</div>
 		);
