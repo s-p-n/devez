@@ -1,6 +1,6 @@
 {
   "name": "devez",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tools to make development easier.",
   "main": "index.js",
   "scripts": {
@@ -11,21 +11,11 @@
   },
   "author": "Spencer A. Lockhart",
   "license": "MIT",
+  "repository": "github:s-p-n/devez",
   "dependencies": {
-    "@sasm/router": "^2.0.2",
+    "@sasm/router": "^3.0.0",
     "@sasm/router-dist": "^1.0.0",
-    "@sasm/system": "^1.1.5",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "mini-css-extract-plugin": "^0.4.0",
-    "normalize.css": "^8.0.0",
-    "prop-types": "^15.6.1",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "react-hot-loader": "^4.2.0"
+    "@sasm/system": "^2.0.0"
   },
   "devDependencies": {
     "babel-loader": "^7.1.4",
@@ -41,6 +31,17 @@
     "url-loader": "^1.0.1",
     "webpack": "^4.11.0",
     "webpack-cli": "^3.0.2",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "mini-css-extract-plugin": "^0.4.0",
+    "normalize.css": "^8.0.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-hot-loader": "^4.2.0"
   }
 }
