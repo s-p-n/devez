@@ -1,6 +1,6 @@
-# sasm
+# devez
 
-Spencer & Adrian's Systems Management
+Tools to make development easier.
 
 # Before Starting
 * You must have **npm** and **node.js** installed.
