@@ -1,7 +1,7 @@
 {
-  "name": "reacttest",
+  "name": "devez",
   "version": "1.0.0",
-  "description": "testing react",
+  "description": "Tools to make development easier.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
