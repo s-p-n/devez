@@ -22,7 +22,7 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+				use: [MiniCssExtractPlugin.loader, "css-loader", "devez-sass-loader"]
 			},
 			{
 				test: /\.(png|jpg|jpeg|gif|svg|pdf)$/,

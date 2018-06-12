@@ -9,13 +9,20 @@
     "dev": "webpack-dev-server --config ./webpack-dev.config.js --open",
     "build": "webpack --config ./webpack-prod.config.js"
   },
+  "bin": {
+    "devez": "./cli.js"
+  },
   "author": "Spencer A. Lockhart",
   "license": "MIT",
   "repository": "github:s-p-n/devez",
   "dependencies": {
-    "@sasm/router": "^3.0.0",
+    "@sasm/router": "^3.0.1",
     "@sasm/router-dist": "^1.0.0",
-    "@sasm/system": "^2.0.0"
+    "@sasm/system": "^3.0.1",
+    "chalk": "^2.4.1",
+    "meow": "^5.0.0",
+    "request": "^2.82.0",
+    "terminal-link": "^1.1.0"
   },
   "devDependencies": {
     "babel-loader": "^7.1.4",
@@ -25,8 +32,8 @@
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.9.1",
     "file-loader": "^1.1.11",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.3",
+    "devez-sass-loader": "^1.0.2",
+    "devez-node-sass": "^1.0.1",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "webpack": "^4.11.0",
