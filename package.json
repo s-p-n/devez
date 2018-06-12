@@ -1,6 +1,6 @@
 {
   "name": "devez",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tools to make development easier.",
   "main": "index.js",
   "scripts": {
@@ -32,8 +32,7 @@
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.9.1",
     "file-loader": "^1.1.11",
-    "devez-sass-loader": "^1.0.2",
-    "devez-node-sass": "^1.0.1",
+    "devez-sass-loader": "^1.0.x",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "webpack": "^4.11.0",
